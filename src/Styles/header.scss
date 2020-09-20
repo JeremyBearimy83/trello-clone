@@ -1,0 +1,46 @@
+@keyframes rotate {
+  to {
+    transform: rotate(0);
+  }
+
+  from {
+    transform: rotate(360deg);
+  }
+}
+
+.header {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  justify-content: space-between;
+
+  &__title {
+    font-size: 4rem;
+    padding-left: 3rem;
+    background: -webkit-linear-gradient(#2dc8ed, #548af0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__settings {
+    font-size: 3.5rem;
+    margin-right: 3rem;
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: -webkit-linear-gradient(#2dc8ed, #548af0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 3s all;
+
+    &:hover {
+      animation: rotate 2s linear infinite;
+    }
+  }
+}

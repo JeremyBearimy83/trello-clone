@@ -1,0 +1,30 @@
+.list {
+  min-width: 20rem;
+  padding: 0.5rem;
+  background-color: blue;
+  border-radius: 5px;
+  height: max-content;
+  font-family: "Poppins", sans-serif;
+
+  &__name {
+    cursor: pointer;
+  }
+
+  &__dropdown {
+    position: relative;
+  }
+
+  &__dropdown-icon {
+    transform: translateY(-0.4rem);
+    font-size: 1.25rem;
+    cursor: pointer;
+    line-height: 1;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+    font-size: 1.5rem;
+  }
+}

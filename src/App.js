@@ -2,13 +2,12 @@
 //todo add deleting and editing to both the things
 
 import React from "react";
-import "./App.css";
-import Board from "./board-component/board.jsx";
+
+import Board from "./Components/Board";
 
 function App() {
   return (
     <div className="App">
-      <div>bruh</div>
       <Board />
     </div>
   );
